@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Zofingen Countdown</title>
+    <html lang="ch-de">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Countdown bis Ferien</h1>
+
+    <h2>Ferien (4. Juli 2026) </h2>
+    <p id="ferien"></p>
+
+    <h2>Kinderfestwoche</h2>
+    <p id="kinderfest"></p>
+
+
+<footer>
+    <p> By And_pan3</p>
+    <p class="warning">Nur fürs Jahr 2026</p>
+    <p><a href="https://github.com/And_pan3">GitHub</a></p>
+    <p><a href="https://www.instagram.com/and_pan3/">Instagram</a></p>
+    <p><a href="https://www.tiktok.com/@and_pan3">TikTok</a></p>
+</footer>
+<script>
+    const ferien=document.getElementById("ferien");
+    const kinderfest=document.getElementById("kinderfest");
+
+    var kinderfestdate=new Date(2026, 5, 29);
+    var feriendate=new Date(2026, 6, 4);
+
+    function countdownupdate(){
+
+        var now=new Date()
+        var kinderfestdiff= kinderfestdate-now
+        var feriendiff= feriendate-now
+        var kinderfestdays=Math.floor(kinderfestdiff/(1000*60*60*24));
+        var feriendays=Math.floor(feriendiff/(1000*60*60*24));
+        ferien.textContent = feriendays + " Tage";
+        kinderfest.textContent = kinderfestdays + " Tage"; 
+    }
+    setInterval(countdownupdate, 1000);
+</script>
+</body>
