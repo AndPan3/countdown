@@ -1,4 +1,5 @@
 body{
+    background-color: #040612;
     background: radial-gradient(circle, #071423, #040612);
     color:#fff3f3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,12 +8,12 @@ body{
 #ferien, #kinderfest{
     color: #e8ecfa;
     font-size: 3em;
-    border: 2px solid #e8ecfa;
+    border: 2px solid #c6d3ff;
     display: inline-block;
     justify-content: center;
     padding: 10px;
     margin-top: 0;
-    background-color: #17191c;
+    background-color: #0c1b31;
     border-radius: 10px;
     margin-bottom: 5%;
     scale: 1;
@@ -21,7 +22,7 @@ body{
 }
 #ferien:hover, #kinderfest:hover{
     color: #bde4ff;
-    background-color: #1f262f;
+    background-color: #0c1520;
     box-shadow: 0 0 10px #bde4ff;
     transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
@@ -37,6 +38,7 @@ footer{
         display: flex;
         gap: 20px;
         justify-content: center;
+        margin-bottom: 20px;
 }
 footer a{
     color: #e8ecfa;
