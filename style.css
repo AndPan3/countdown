@@ -15,9 +15,9 @@ body{
     margin-top: 0;
     background-color: #0c1b31;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 5vh;
     scale: 1;
-    margin-top: 1%;
+    margin-top: 1vh;
     transition: margin-top 0.3s;
 }
 #ferien:hover, #kinderfest:hover{
@@ -27,8 +27,8 @@ body{
     transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 h1{
-    margin-bottom:2%;
-    margin-top:2%
+    margin-bottom:2vh;
+    margin-top:2vh
 }
 h2{
     margin-bottom: 0;
@@ -53,79 +53,68 @@ footer p{
     letter-spacing: normal;
     transition:letter-spacing 0.3s;
 }
-@media (max-width: 512px) {
+@media (max-width: 511px) {
     .feriendiv, .kinderfestdiv{
-        margin-top: 25%;
-        margin-bottom: 25%;
+        margin-top: 25vh;
+        margin-bottom: 25vh;
     }
     footer p{
         font-size: x-small;
     }
     .title{
-        margin-top: 25%;
-    }
-}
-@media (max-width: 800px) {
-    .title{
-        margin-top: 10%;
-        margin-bottom:5%
-    }
-    .feriendiv{
-        margin-top: 25%;
-        margin-bottom: 0%;
-    }.kinderfestdiv{
-        margin-top: 10%;
-        margin-bottom: 0%;
+        margin-top: 25vh;
     }
 }
 @media (min-width: 512px) {
     h1{
-        margin-top: 10%;
+        margin-top: 10vh;
     }
     .feriendiv{
-        margin-top: 5%;
+        margin-top: 5vh;
+    }
+        footer p{
+        font-size: x-small;
+    }
+    .title{
+        margin-top: 25vh;
     }
 }
 @media (min-width: 800px) {
     h1{
-        margin-top: 10%;
+        margin-top: 10vh;
     }
     .feriendiv{
-        margin-top: 10%;
-        margin-bottom: 0%;
+        margin-top: 10vh;
+        margin-bottom: 0vh;
     }.kinderfestdiv{
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-}
-@media (min-width: 1600px) {
-    h1{
-        margin-top: 5%;
-    }
-    .feriendiv{
-        margin-top: 5%;
-        margin-bottom: 0%;
-    }.kinderfestdiv{
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-}
-@media (min-width: 2000px){
-    .feriendiv, .kinderfestdiv{
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    h1{
-        margin-top: 5%;
-        margin-bottom: 5%
-    }
-    footer p{
-        font-size: large;
+        margin-top: 0vh;
+        margin-bottom: 0vh;
     }
 }
 @media(min-width: 1100px){
     .feriendiv, .kinderfestdiv{
-    margin-top: 5%;
-margin-bottom: 5%;
+    margin-top: 5vh;
+margin-bottom: 5vh;
     }
+}
+@media (min-width: 1600px) {
+    h1{
+        margin-top: 5vh;
+    }
+    .feriendiv{
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }.kinderfestdiv{
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+}
+@media (min-width: 2000px){
+    .feriendiv, .kinderfestdiv,footer{
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+footer{
+    font-size: larger;
+}
 }
