@@ -9,17 +9,20 @@ const ferien=document.getElementById("ferien");
         var now=new Date()
         var kinderfestdiff= kinderfestdate-now
         var feriendiff= feriendate-now
-        const kinderfestdays = Math.ceil(kinderfestdiff / (1000 * 60 * 60 * 24));
-        const feriendays = Math.ceil(feriendiff / (1000 * 60 * 60 * 24));       
+        const kinderfestdays = Math.floor(kinderfestdiff / (1000 * 60 * 60*24));
+        const feriendays = Math.floor(feriendiff / (1000 * 60 * 60*24 ));       
         
-        const kinderfesth = Math.ceil(kinderfestdiff / (1000 * 60 * 60 ));
-        const ferienh = Math.ceil(feriendiff / (1000 * 60 * 60));
+        const kinderfesth = Math.floor(kinderfestdiff % (1000 * 60 * 60 *24)/(1000*60*60));
+        const ferienh = Math.floor(feriendiff % (1000 * 60 * 60*24)/(1000*60*60));
 
-        const kinderfests = Math.ceil(kinderfestdiff / (1000 * 60 ));
-        const feriens = Math.ceil(feriendiff / (1000 * 60));
+        const kinderfestm = Math.floor(kinderfestdiff % (1000 * 60*60)/(1000*60));
+        const ferienm = Math.floor(feriendiff % (1000 * 60*60 )/(1000*60));
+
+        const kinderfests = Math.floor(kinderfestdiff % (1000*60)/(1000));
+        const feriens = Math.floor(feriendiff % (1000*60)/(1000));
         
-        ferien.textContent = feriendays + " Tage, " + ferienh + " Stunden, "+ feriens + " Sekunden";
-        kinderfest.textContent = kinderfestdays + " Tage, " + kinderfesth + " Stunden, "+ kinderfests + " Sekunden"; 
+        ferien.textContent = feriendays + " Tage, " + ferienh + " Stunden, "+ ferienm + "Minuten, "  + feriens + " Sekunden";
+        kinderfest.textContent = kinderfestdays + " Tage, " + kinderfesth + " Stunden, "+ kinderfestm+ " Minuten,"+ kinderfests + " Sekunden"; 
     }
     countdownupdate()
     setInterval(countdownupdate, 1000);
