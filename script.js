@@ -25,4 +25,4 @@ const ferien=document.getElementById("ferien");
         kinderfest.textContent = kinderfestdays + "d, " + kinderfesth + "h, "+ kinderfestm+ "m,"+ kinderfests + "s"; 
     }
     countdownupdate()
-    setInterval(countdownupdate, 1000);
+    setInterval(countdownupdate, 500);
