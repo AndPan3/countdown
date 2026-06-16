@@ -2,6 +2,7 @@
 <html lang="ch-de">
 <head>
     <title>Zofingen Countdown</title>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -26,26 +27,6 @@
     <p><a href="https://www.instagram.com/and_pan3/">Instagram</a></p>
     <p><a href="https://www.tiktok.com/@and_pan3">TikTok</a></p>
 </footer>
-<script>
-    const ferien=document.getElementById("ferien");
-    const kinderfest=document.getElementById("kinderfest");
-
-    var kinderfestdate=new Date(2026, 5, 29);
-    var feriendate=new Date(2026, 6, 4);
-
-    function countdownupdate(){
-
-        var now=new Date()
-        var kinderfestdiff= kinderfestdate-now
-        var feriendiff= feriendate-now
-        const kinderfestdays = Math.ceil(kinderfestdiff / (1000 * 60 * 60 * 24));
-        const feriendays = Math.ceil(feriendiff / (1000 * 60 * 60 * 24));
-        ferien.textContent = feriendays + " Tage";
-        kinderfest.textContent = kinderfestdays + " Tage"; 
-    }
-    countdownupdate()
-    setInterval(countdownupdate, 60000);
-</script>
  <script data-goatcounter="https://andpan3.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
 </body>
