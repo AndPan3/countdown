@@ -22,4 +22,4 @@ const ferien=document.getElementById("ferien");
         kinderfest.textContent = kinderfestdays + " Tage, " + kinderfesth + " Stunden, "+ kinderfests + " Sekunden"; 
     }
     countdownupdate()
-    setInterval(countdownupdate, 60000);
+    setInterval(countdownupdate, 1000);
