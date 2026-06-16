@@ -21,8 +21,8 @@ const ferien=document.getElementById("ferien");
         const kinderfests = Math.floor(kinderfestdiff % (1000*60)/(1000));
         const feriens = Math.floor(feriendiff % (1000*60)/(1000));
         
-        ferien.textContent = feriendays + " Tage, " + ferienh + " Stunden, "+ ferienm + "Minuten, "  + feriens + " Sekunden";
-        kinderfest.textContent = kinderfestdays + " Tage, " + kinderfesth + " Stunden, "+ kinderfestm+ " Minuten,"+ kinderfests + " Sekunden"; 
+        ferien.textContent = feriendays + "d, " + ferienh + "h, "+ ferienm + "m, "  + feriens + "s";
+        kinderfest.textContent = kinderfestdays + "d, " + kinderfesth + "h, "+ kinderfestm+ "m,"+ kinderfests + "s"; 
     }
     countdownupdate()
     setInterval(countdownupdate, 1000);
