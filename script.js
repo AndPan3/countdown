@@ -24,5 +24,9 @@ const ferien=document.getElementById("ferien");
         ferien.textContent = feriendays + "d, " + ferienh + "h, "+ ferienm + "m, "  + feriens + "s";
         kinderfest.textContent = kinderfestdays + "d, " + kinderfesth + "h, "+ kinderfestm+ "m,"+ kinderfests + "s"; 
     }
+    if (kinderfestdsays=<0){
+        kinderfest.textContent = "Schon Vorbei"}else {kinderfest.textContent = kinderfestdays + "d, " + kinderfesth + "h, "+ kinderfestm+ "m,"+ kinderfests + "s"; }
+    if (feriendays=<0){
+        ferien.textContent = "Schon Vorbei"}else {ferien.textContent = feriendays + "d, " + ferienh + "h, "+ ferienm + "m, "  + feriens + "s";}
     countdownupdate()
     setInterval(countdownupdate, 500);
